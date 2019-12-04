@@ -62,7 +62,7 @@ object demo5 {
     }
     println()
 
-    // whilex循环
+    // while循环
     // while 循环执行
     var a = 0
     while( a < 20 ){
