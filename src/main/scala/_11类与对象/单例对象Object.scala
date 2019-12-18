@@ -24,20 +24,21 @@ object Marker{
     "green" -> new Marker("green")
   )
 
-
-  // 定义方法放回map中存在的Marker对象
+  // Object（参数1 ，参数2 ，……）这样是隐含的调用apply方法
   def apply(color:String) = {
     if(markers.contains(color)) markers(color) else null
   }
 
-  //
+  // 定义方法返回map中存在的Marker对象
   def getMarker(color:String) = {
     if(markers.contains(color)) markers(color) else null
   }
 
   // test
   def main(args: Array[String]) {
-    println(new Marker("red"))
+    //半生对象只有在第一此调用的时候会执行init代码
+    Marker("red")
+    println(Marker apply ("red"))  //相当于直接调用 Marker.apply("red ")方法  ====   Marker apply ("red")
     // 单例函数调用，省略了.(点)符号
     println(Marker getMarker "blue")
   }
