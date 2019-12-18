@@ -31,6 +31,23 @@ object demo8 {
     var fs = printf("浮点型变量为 %f, 整型变量为 %d, 字符串为 %s", floatVar, intVar, stringVar)
     println(fs)
 
+    println("---------------------------")
+    var str = "\"1231231\""
+    var temInt = Integer.parseInt(str.replace('\"',' ').trim)
+    var temInt1 = str.replace('\"',' ').trim.toInt
+    println(str)
+    println(temInt.getClass.getName)
+    println(temInt1.getClass.getName)
+
+    println("------------拼接字符串---------------")
+
+    var tem0 = 12312
+    var tem1 = "我爱你中国"
+    var tem2 = s"${tem1}_${tem0}_hahha"   // 拼接字符串
+
+    println(tem1)
+    println(tem2)
+
   }
   /*
 
@@ -78,7 +95,7 @@ String toLowerCase(Locale locale)   使用给定 Locale 的规则将此 String �
 String toString()   返回此对象本身（它已经是一个字符串！）
 String toUpperCase()    使用默认语言环境的规则将此 String 中的所有字符都转换为大写
 String toUpperCase(Locale locale)     使用给定 Locale 的规则将此 String 中的所有字符都转换为大写
-String trim()     删除指定字符串的首尾空白符
+  String trim()     删除指定字符串的首尾空白符
 static String valueOf(primitive data type x)  返回指定类型参数的字符串表示形式
    */
 

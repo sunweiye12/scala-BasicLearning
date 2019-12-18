@@ -1,7 +1,8 @@
 package _10集合
-import scala.collection.mutable.Set
+import scala.collection.mutable._
 /*
-Scala Set(集合)是没有重复的对象集合，所有的元素都是唯一的。
+Scala Set(集合)是没有重复的对象集合，所有的元素都是唯一的，并且类型相同。
+Set有两种：可变与不可变，默认为不可变类型，当引入collect.mutable.Set时 使用的是可变类型的Set
  */
 object myset {
 
@@ -17,16 +18,19 @@ object myset {
     // 可变集合需要引入 scala.collection.mutable.Set： 此类
     val mutableSet = Set(1,2,3)
     println(mutableSet.getClass.getName) // scala.collection.mutable.HashSet
-    mutableSet.add(4)
-    mutableSet.remove(1)
-    mutableSet += 5
+    mutableSet.add(4)     // 增加一个元素
+    mutableSet.remove(1)  // 减少一个元素
+    mutableSet += (1,12)  // 增加两个元素
     mutableSet += 100   //增加一个元素（如果意境存在则不添加）
     mutableSet -= 2     //减少一个元素（如果不存在则不减少）
 
     println(mutableSet) // Set(5, 3, 4)
 
+
     val another = mutableSet.toSet
     println(another.getClass.getName) // scala.collection.immutable.Set
+
+    println(set.++(mutableSet))
 
 
 
