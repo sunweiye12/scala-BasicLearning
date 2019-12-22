@@ -14,7 +14,7 @@ class Marker private(val color:String) {
 
 }
 
-// 伴生对象，与类名字相同，可以访问类的私有属性和方法
+// 伴生对象，与类名字相同，可以访问原生类的私有属性和方法
 object Marker{
 
   // 创建以恶搞map结构

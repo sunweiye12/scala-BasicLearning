@@ -1,9 +1,4 @@
 package _11类与对象
-
-/*
-只能够继承一个父类
- */
-
 /**
 Scala继承一个基类跟Java很相似, 但我们需要注意以下几点：
 1、只有主构造函数才可以往基类的构造函数里写参数。
@@ -41,8 +36,6 @@ class Employee extends Person {
       println("重写父类中的抽象方法")
   }
 }
-
-
 
 // test
 object 继承{
