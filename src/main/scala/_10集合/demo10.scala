@@ -12,10 +12,6 @@ object demo10 {
 
   def main(args: Array[String]): Unit = {
     println("集合--")
-
-
-
-
   }
 
 }
