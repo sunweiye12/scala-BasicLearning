@@ -12,7 +12,6 @@ object myoption {
     println("option选项集合--")
 
     // 虽然 Scala 可以不定义变量的类型，不过为了清楚些，我还是
-    // 把他显示的定义上了
     var myMap:Map[String,String] = Map("key1" -> "你好")
     myMap += ("key2" -> "世界")
     myMap += ("key3" -> "世界1")
