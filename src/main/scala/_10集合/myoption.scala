@@ -14,7 +14,7 @@ object myoption {
     // 虽然 Scala 可以不定义变量的类型，不过为了清楚些，我还是
     var myMap:Map[String,String] = Map("key1" -> "你好")
     myMap += ("key2" -> "世界")
-    myMap += ("key3" -> "世界1")
+    myMap += ("key3" -> "meili")
     val value1: Option[String] = myMap.get("key1")
     val value2: Option[String] = myMap.get("key2")
     val value3 = myMap.get("key3")
