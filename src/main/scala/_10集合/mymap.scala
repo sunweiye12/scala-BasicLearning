@@ -3,7 +3,7 @@ import scala.collection.mutable._
 /*
 Scala Map(映射)是一种可迭代的键值对（key/value）结构。所有的值都可以通过键来获取。
 Map 中的键都是唯一的。
-Map 也叫哈希表（Hash tables） 其中KV类型不可变
+Map 也叫哈希表（Hash tables） 其中KV类型不可变**
 Map也有两种：可变与不可变，默认为不可变类型，当引入collect.mutable.Map时 使用的是可变类型的Map
  */
 object mymap {
