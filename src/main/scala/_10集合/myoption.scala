@@ -22,7 +22,7 @@ object myoption {
     //  Option对象也只是一个类,Some和None是他的一个子类,入过能找到返回值就会用Some包装返回,否则直接返回一个None对象
     println(value1.)     // Some(value)    // 直接返回的是一个Some对象
     println(value1.get) // 当返回的是Some对象的是后说明返回成功了,就可以通过get方法得到里面的内容
-    println(value2)
+    println(value2)  //master
     println(value3.getOrElse(None)) // None   // 如果不确定返回的是Some还是None就直接执行getOrElse
   }
 }
