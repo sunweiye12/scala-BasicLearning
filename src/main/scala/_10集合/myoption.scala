@@ -24,5 +24,6 @@ object myoption {
     println(value1.get)   // 当返回的是Some对象的是后说明返回成功了 就可以通过get方法得到里面的内容
     println(value2)
     println(value3.getOrElse(None)) // None   // 如果不确定返回的是Some还是None就直接执行getOrElse
+    //dev
   }
 }
