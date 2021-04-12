@@ -1,4 +1,5 @@
 package _10集合
+import scala.Console.in
 import scala.collection.mutable._
 /*
 Scala Set(集合)是没有重复的对象集合，所有的元素都是唯一的，并且类型相同。
@@ -11,6 +12,13 @@ object myset {
 
     // 默认引用 scala.collection.immutable.Set，不可变集合
     val set = Set(1,2,3)
+    val set2 = Set(1,3,2)
+    if (set == set2) {
+      print("test")
+      print(set.contains(1))
+    } else {
+      print("test12312")
+    }
     println(set.getClass.getName) //
     println(set.exists(_ % 2 == 0)) //true
     println(set.drop(1)) //Set(2,3)
@@ -31,8 +39,6 @@ object myset {
     println(another.getClass.getName) // scala.collection.immutable.Set
 
     println(set.++(mutableSet))
-
-
 
   }
 
